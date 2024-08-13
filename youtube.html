@@ -36,20 +36,19 @@
             margin-bottom: 20px;
         }
         
-        .video-preview{
+        .video-preview, .video-preview2{
+            vertical-align: top;
             width: 300px;
             display: inline-block;
             margin-right: 10px; 
         }
-        
-        .video-preview2{
-            vertical-align: top;
-            width: 300px;
-            display: inline-block; 
-            
+
+        .video-info-grid{
+            display: grid;
+            grid-template-columns: 50px 1fr;
         }
 
-        .channelprofile1{
+        .channelprofile1, .channelprofile2{
             vertical-align: top;
             display: inline-block;
             width: 50px;
@@ -99,7 +98,7 @@
         <div class="thumbnail-row">
             <img class="thumbnail1" src="thumbnails/thumbnail.webp">
         </div>
-        <div>
+        <div class="video-info-grid">
             <div class="channelprofile1"> 
                 <img class="videoprofile1" src="channel-profile/channelprofile1.jpg"> 
             </div>
@@ -112,23 +111,22 @@
     </div>
 
     <div class="video-preview2">
-
-        <div>
+        <div class="thumbnail-row">
             <img class="thumbnail2" src="thumbnails/thumbnail2.webp">
         </div>
-        <div>
+        <div class="video-info-grid">
             <div class="channelprofile2">
-                <img class="videoprofile2" src="channel-profile/channelprofile2.jpg">
+                <img class="videoprofile1" src="channel-profile/channelprofile2.jpg">
             </div>
-            <div>
-
+            <div class="video-info">
+                <p class="video-title">Thorfin vs Garm</p>
+                <p class="video-author">Makoto Yukimura</p>
+                <p class="video-stats">3.4M views &#183; 6 months ago</p> 
             </div>
         </div>
 
         
-        <p class="video-title">Thorfin vs Garm</p>
-        <p class="video-author">Makoto Yukimura</p>
-        <p class="video-stats">3.4M views &#183; 6 months ago</p> 
+        
     </div>
 
 </body>
