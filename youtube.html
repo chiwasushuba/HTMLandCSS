@@ -20,12 +20,9 @@
     <style>
 
 
-        .thumbnail1{
-            width: 300px;
-        }
-
-        .thumbnail2{
-            width: 300px;
+        .thumbnail1, .thumbnail2{
+            width: 100%;
+            display: block;
         }
 
         .searchbar{
@@ -34,13 +31,6 @@
             width: 300px;
             font-size: 18px;
             margin-bottom: 20px;
-        }
-        
-        .video-preview, .video-preview2{
-            vertical-align: top;
-            width: 300px;
-            display: inline-block;
-            margin-right: 10px; 
         }
 
         .video-info-grid{
@@ -87,47 +77,118 @@
             margin-top: 0;
         }
 
+        .video-grid{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 10px;
+            row-gap: 30px;
+        }
     </style>
 
 </head>
 <body>
     <input class="searchbar" type="text" placeholder="Search">
     
-
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail1" src="thumbnails/thumbnail.webp">
+    <div class="video-grid">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail1" src="thumbnails/thumbnail.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channelprofile1"> 
+                    <img class="videoprofile1" src="channel-profile/channelprofile1.jpg"> 
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai</p>
+                    <p class="video-author">Marques Brownlee</p>
+                    <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                </div>
+            </div>  
         </div>
-        <div class="video-info-grid">
-            <div class="channelprofile1"> 
-                <img class="videoprofile1" src="channel-profile/channelprofile1.jpg"> 
+    
+        <div class="video-preview2">
+            <div class="thumbnail-row">
+                <img class="thumbnail2" src="thumbnails/thumbnail2.webp">
             </div>
-            <div class="video-info">
-                <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai</p>
-                <p class="video-author">Marques Brownlee</p>
-                <p class="video-stats">3.4M views &#183; 6 months ago</p>
+            <div class="video-info-grid">
+                <div class="channelprofile2">
+                    <img class="videoprofile1" src="channel-profile/channelprofile2.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Thorfin vs Garm</p>
+                    <p class="video-author">Makoto Yukimura</p>
+                    <p class="video-stats">3.4M views &#183; 6 months ago</p> 
+                </div>
             </div>
-        </div>  
+        </div>
+    
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail1" src="thumbnails/thumbnail.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channelprofile1"> 
+                    <img class="videoprofile1" src="channel-profile/channelprofile1.jpg"> 
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai</p>
+                    <p class="video-author">Marques Brownlee</p>
+                    <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                </div>
+            </div>  
+        </div>
+    
+        <div class="video-preview2">
+            <div class="thumbnail-row">
+                <img class="thumbnail2" src="thumbnails/thumbnail2.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channelprofile2">
+                    <img class="videoprofile1" src="channel-profile/channelprofile2.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Thorfin vs Garm</p>
+                    <p class="video-author">Makoto Yukimura</p>
+                    <p class="video-stats">3.4M views &#183; 6 months ago</p> 
+                </div>
+            </div>
+        </div>
+    
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail1" src="thumbnails/thumbnail.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channelprofile1"> 
+                    <img class="videoprofile1" src="channel-profile/channelprofile1.jpg"> 
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai</p>
+                    <p class="video-author">Marques Brownlee</p>
+                    <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                </div>
+            </div>  
+        </div>
+    
+        <div class="video-preview2">
+            <div class="thumbnail-row">
+                <img class="thumbnail2" src="thumbnails/thumbnail2.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channelprofile2">
+                    <img class="videoprofile1" src="channel-profile/channelprofile2.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Thorfin vs Garm</p>
+                    <p class="video-author">Makoto Yukimura</p>
+                    <p class="video-stats">3.4M views &#183; 6 months ago</p> 
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <div class="video-preview2">
-        <div class="thumbnail-row">
-            <img class="thumbnail2" src="thumbnails/thumbnail2.webp">
-        </div>
-        <div class="video-info-grid">
-            <div class="channelprofile2">
-                <img class="videoprofile1" src="channel-profile/channelprofile2.jpg">
-            </div>
-            <div class="video-info">
-                <p class="video-title">Thorfin vs Garm</p>
-                <p class="video-author">Makoto Yukimura</p>
-                <p class="video-stats">3.4M views &#183; 6 months ago</p> 
-            </div>
-        </div>
-
-        
-        
-    </div>
+    
 
 </body>
 </html>
