@@ -8,6 +8,13 @@
             margin-bottom: 20px;
         }
 
+        .subscribe-button {
+            border: none;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+        }
+
 
     </style>
 
@@ -15,7 +22,7 @@
 <body>
 
     <p> Youtube Subscribe Button</p>
-    <button class="js-subscribeButton" onclick = 'subscribe()'> Subscribe </button>
+    <button class="js-subscribeButton subscribe-button" onclick = 'subscribe()'> Subscribe </button>
     <p>Rock Paper Scissors</p>
 
     <!-- <a href="youtube.com">Click me</a> -->
@@ -23,9 +30,13 @@
     <p> Amazon Shipping Calculator</p>
     <p> Orders under $40 = +$10 shipping</p>
     <p> Orders over #40 = FREE shipping</p>
-    <input class = "js-inputBar" placeholder="Cost of order " onkeydown="console.log('typing...')">
+    <input class = "js-inputBar" placeholder="Cost of order " onkeydown="console.log('typing...');
+        if(event.key === 'Enter'){
+            calculate();
+        }
+    ">
     <button class = "js-calculateButton" onclick = "calculate()"> Calculate </button>
-    <p> Result: </p>
+    <p id="js-result"> Result: </p>
 
 
 
@@ -45,9 +56,10 @@
             const inputElement = Number(document.querySelector(".js-inputBar").value);
 
             if(inputElement <= 40){
-
+                let cost = Number(inputElement + 10);
+                document.getElementById("js-result").innerText = cost;
             } else {
-                
+                document.getElementById("js-result").innerText = inputElement;
             }
         }
 
