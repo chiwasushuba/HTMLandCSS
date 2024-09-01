@@ -25,6 +25,20 @@
             color: black;
         }
 
+        .input-bar{
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        .calculate-button{
+            padding: 12px 15px;
+            color: white;
+            background-color: rgb(54, 150, 54);
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
 
     </style>
 
@@ -40,12 +54,12 @@
     <p> Amazon Shipping Calculator</p>
     <p> Orders under $40 = +$10 shipping</p>
     <p> Orders over #40 = FREE shipping</p>
-    <input class = "js-inputBar" placeholder="Cost of order " onkeydown="console.log('typing...');
+    <input class = "js-inputBar input-bar" placeholder="Cost of order " onkeydown="console.log('typing...');
         if(event.key === 'Enter'){
             calculate();
         }
     ">
-    <button class = "js-calculateButton" onclick = "calculate()"> Calculate </button>
+    <button class = "js-calculateButton calculate-button" onclick = "calculate()"> Calculate </button>
     <p id="js-result"> Result: </p>
 
 
@@ -69,9 +83,9 @@
 
             if(inputElement <= 40){
                 let cost = Number(inputElement + 10);
-                document.getElementById("js-result").innerText = cost;
+                document.getElementById("js-result").innerText = `Result : ${cost}`;
             } else {
-                document.getElementById("js-result").innerText = inputElement;
+                document.getElementById("js-result").innerText = `Result : ${inputElement}`;
             }
         }
 
