@@ -15,17 +15,30 @@
 <body>
 
     <p> Youtube Subscribe Button</p>
-    <button class="subscribeButton"> Subscribed </button>
+    <button class="js-subscribeButton" onclick = 'subscribe()'> Subscribe </button>
     <p>Rock Paper Scissors</p>
-    <a href="youtube.com">Click me</a>
 
+    <!-- <a href="youtube.com">Click me</a> -->
+
+    <p> Amazon Shipping Calculator</p>
+    <p> Orders under $40 = +$10 shipping</p>
+    <p> Orders over #40 = FREE shipping</p>
+    
 
 
     <button> hello </button>
 
 
     <script>
-        
+        function subscribe(){
+            const buttonElement = document.querySelector('.js-subscribeButton');
+
+            if(buttonElement.innerText == 'Subscribe'){
+                buttonElement.innerHTML = 'Subscribed';
+            } else {
+                buttonElement.innerHTML = 'Subscribe';
+            }
+        }
 
 
     </script>
