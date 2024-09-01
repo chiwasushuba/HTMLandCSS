@@ -15,6 +15,14 @@
             background-color: black;
             color: rgb(184, 184, 184);
             padding: 7px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-bottom: 30px;
+        }
+
+        .is-subscribed{
+            background-color: rgb(184,184,184);
+            color: black;
         }
 
 
@@ -49,8 +57,10 @@
 
             if(buttonElement.innerText == 'Subscribe'){
                 buttonElement.innerHTML = 'Subscribed';
+                buttonElement.classList.add('is-subscribed');
             } else {
                 buttonElement.innerHTML = 'Subscribe';
+                buttonElement.classList.remove('is-subscribed');
             }
         }
 
