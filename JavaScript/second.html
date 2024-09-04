@@ -16,11 +16,21 @@
         }
 
         .move-icon{
-            height:50px;
+            height:70px;
+        }
+
+        .move-button{
+            background-color: transparent;
+            border: 3px solid white;
+            width: 120px;
+            height: 120px;
+            border-radius: 70px;  
+            margin-right: 10px;
+            cursor:crosshair;
         }
 
         button{
-            border-radius: 50px;
+            
         }
 
     </style>
@@ -28,9 +38,9 @@
 <body>
     <p class="title">Rock, Paper, Scissors</p>
     <p>Choose your move:</p>
-    <button class = "rock" onclick="playGame('rock')"><img src="images/rock-emoji.png" class="move-icon"></button>
-    <button class = "paper" onclick="playGame('paper')"><img src="images/paper-emoji.png" class="move-icon"></button>
-    <button class = "scissors" onclick="playGame('scissors')"><img src="images/scissors-emoji.png" class="move-icon"></button>
+    <button class = "move-button" onclick="playGame('rock')"><img src="images/rock-emoji.png" class="move-icon"></button>
+    <button class = "move-button" onclick="playGame('paper')"><img src="images/paper-emoji.png" class="move-icon"></button>
+    <button class = "move-button" onclick="playGame('scissors')"><img src="images/scissors-emoji.png" class="move-icon"></button>
     <button class = "resetButton" onclick="reset()">Reset Button</button>
 
     <p id="result"></p>
